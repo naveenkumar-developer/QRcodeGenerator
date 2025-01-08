@@ -3,7 +3,7 @@
 I developed a QR Code Generator using HTML, CSS, and JavaScript. This simple application allows users to generate QR codes based on their input. It integrates the free GoQR.me API, which provides seamless QR code generation services.
 
 ## Preview 📸
-
+Open the project click [here](https://naveenkumar-developer.github.io/QRcodeGenerator/) 
 ![website Template](./IMAGES/qrcode.png)
 
 
