@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #f1faee;
+}
+
+/* STYLE FOR MOBILES */
+
+.container{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.headerGroup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerGroup img{
+    width: 50px;
+}
+
+.headerGroup h1{
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0d1b2a;
+    
+}
+
+.container input{
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    margin-inline: auto;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #0d1b2a;
+}
+
+.container input.errInput{
+    border: 2px solid red;
+    transition: all 0.3s;
+}
+
+.container .qrcode_container{
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    padding: 10px;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+}
+
+.container .qrcode_container[data-name = active]{
+    visibility: visible;
+    height: inherit;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.container button{
+    width: 80%;
+    height: 40px;
+    margin-inline: auto;
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.container button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+
+/* STYLES FOR THE TABLETS   */
+@media all and (min-width: 768px) {
+    
+.container{
+    width: 500px;
+}
+
+.headerGroup h1{
+    font-size: 2rem;
+}
+
+
+.container input{
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+
+.container button{
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+
+}
+
+
+/* STYLE FOR LAPTOP  */
+
+@media all and (min-width: 1024px) {
+    .container{
+        width: 500px;
+    }
+
+    .headerGroup img{
+        width: 70px;
+    }
+
+    .headerGroup h1{
+        font-size: 2rem;
+    }
+
+}
+
+
